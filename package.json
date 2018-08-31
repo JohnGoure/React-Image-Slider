@@ -1,7 +1,7 @@
 {
   "name": "image-slider",
   "version": "1.0.0",
-  "description": "",
+  "description": "An easy to use material UI image slider.",
   "main": "index.js",
   "scripts": {
     "build": "webpack",

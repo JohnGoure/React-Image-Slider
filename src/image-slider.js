@@ -1,9 +1,9 @@
 import React from 'react';
+import './style.scss';
 
 const imageSlider = () => {
  return (
-     <div>
-         <p>Hellooo John</p>
+     <div className="slider">
      </div>
  )
 };

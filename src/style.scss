@@ -1,4 +1,58 @@
 .slider {
-    width: 100%;
-    border: 1px solid black;
+    height: 100px;
+    display: grid;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; 
+}
+
+.prev-btn {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.next-btn {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+@media (min-height: 600px) {
+    .slider {
+        height: 600px;
+    }
+}
+
+@media (min-height: 800px) {
+    .slider {
+        height: 800px;
+    }
+}
+
+.prev {
+    animation-name: slideLeft;
+    animation-duration: 1s;
+}
+
+.next {
+ animation-name: slideRight;
+ animation-duration: 1s;
+}
+
+@keyframes slideLeft {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes slideRight {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0s;
+    }
 }
